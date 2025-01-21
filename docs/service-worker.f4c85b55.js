@@ -1,0 +1,2 @@
+const t=["/todo-list-app/","/todo-list-app /index.html","/todo-list-app /style.css","/todo-list-app /app.js","/todo-list-app /manifest.json","/todo-list-app /icons/icon-128.png","/todo-list-app /icons/icon-512.png"];self.addEventListener("install",s=>{s.waitUntil(caches.open("to-do-pwa-cache-v1").then(s=>s.addAll(t)))}),self.addEventListener("fetch",t=>{t.respondWith(caches.match(t.request).then(s=>s||fetch(t.request)))});
+//# sourceMappingURL=service-worker.f4c85b55.js.map
